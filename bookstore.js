@@ -50,6 +50,9 @@ fetch(url, {
                 var textCard = document.createElement('p');
                 textCard.setAttribute('class', 'text_card');
                 
+                var buttCard = document.createElement('button');
+                buttCard.setAttribute('class', 'butt_card');
+                
                 divIn.appendChild(midDiv);
                 midDiv.appendChild(divCard)
                 divCard.appendChild(divFront);
@@ -60,6 +63,8 @@ fetch(url, {
                 divBack.appendChild(textCard);
                 h1Card.innerHTML = titleCard;
                 textCard.innerHTML = descrCard;
+                divBack.appendChild(buttCard);
+                buttCard.innerHTML = 'Show more';
 //                h1Card.appendChild(titleCard);
 //                divBack.innerHTML = 'ciaoB';
 //                textCard.appendChild(descrCard);
